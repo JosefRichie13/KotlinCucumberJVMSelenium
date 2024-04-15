@@ -66,11 +66,11 @@ class Steps_ProductCheckout {
     /*
     We get the Tax shown in the UI, extract the number, convert it into float and store it in a variable, taxCalculatedByAPP
     We get the non taxed sum shown in the UI, extract the number, convert into float, multiple it by 0.08 (8%), round the result off to 2 and store it in a variable, taxCalculatedByCODE
-    Then we check if both taxCalculatedByAPP and taxCalculatedByCODE are equal
+    Then we check if both taxCalculatedByAPP and taxCalculatedByCODE are equal.
 
     We get the total shown in the UI, extract the number, convert it into float and store it in a variable, totalCalculatedByAPP
     We get the non tax added total shown in the UI, extract the number, convert into float, add the tax calculated (taxCalculatedByCODE) and store it in a variable, totalCalculatedByCODE
-    Then we check if both totalCalculatedByAPP and totalCalculatedByCODE are equal
+    Then we check if both totalCalculatedByAPP and totalCalculatedByCODE are equal.
     */
     @Then("I should see the tax calculated at 8 percent")
     fun verifyTheTaxCalculation() {
